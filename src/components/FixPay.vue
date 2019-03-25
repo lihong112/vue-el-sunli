@@ -3,6 +3,7 @@
 
     <el-table :data="tableData" style="width: 100%"  border stripe
               :default-sort = "{prop: 'spendingTime', order: 'descending'}"
+              show-summary
     >
       <el-table-column label="固定投资列表" align='center'>
         <el-table-column   label="#" type="index"></el-table-column>
@@ -116,6 +117,8 @@
       },
       showDialog(){
         this.dialogFormVisible=true
+        this.isUpdate=false
+        this.form={}
         console.log("enter showDialog")
       },
       deleteRow(index, row) {
