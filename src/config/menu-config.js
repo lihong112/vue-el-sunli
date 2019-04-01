@@ -7,7 +7,7 @@ module.exports = [{
     componentName: 'FixPay'
   }, {
     name: '月支出',
-    componentName: 'BasicContainer'
+    componentName: 'MonthPay'
   }]
 }, {
   name: '收入',
